@@ -31,11 +31,13 @@ Show.sum("rating")
   def popular_shows
     #returns an array of all of the shows that have a rating greater than 5
     #hint: use the where Active Record method
+    Show.where('rating > 5')
   end
 
   def shows_by_alphabetical_order
     #returns an array of all of the shows sorted by alphabetical
     #order according to their names. hint: use the order Active Record method.
+    Show.order(name: :asc)
   end
 
 end
