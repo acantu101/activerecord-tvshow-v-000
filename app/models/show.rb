@@ -9,8 +9,7 @@ class Show < ActiveRecord::Base
   def Show::most_popular_show
     #this method should return the show with the highest
     #rating. hint: use the highest_rating method as a helper method.
-  max_rating =  Show.maximum("rating")
-  max_rating.name
+  Show.maximum("rating").find("name")
   end
 
   def Show::lowest_rating
