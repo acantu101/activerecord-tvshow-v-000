@@ -3,7 +3,7 @@ class Show < ActiveRecord::Base
   def Show::highest_rating
     #return the highest value in the ratings column.
     #hint: if there is a minimum
-    Shows.maximum("rating")
+    Show.maximum("rating")
   end
 
   def most_popular_show
