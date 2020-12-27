@@ -23,9 +23,6 @@ class Show < ActiveRecord::Base
 
 
 
-
-  end
-
   def ratings_sum
     #returns the sum of all of the ratings.
 
