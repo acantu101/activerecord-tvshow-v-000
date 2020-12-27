@@ -18,6 +18,7 @@ class Show < ActiveRecord::Base
 
   def Show::latest_popular_show
     #returns the show with the lowest rating.
+    Show.order(rating: :asc).first
   end
 
   def Show::lowest_rating
