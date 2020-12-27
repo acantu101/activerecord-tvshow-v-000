@@ -16,18 +16,12 @@ class Show < ActiveRecord::Base
     Show.minimum("rating")
   end
 
-  def Show::latest_popular_show
+  def Show::least_popular_show
     #returns the show with the lowest rating.
     Show.order(rating: :asc).first
   end
 
-  def Show::lowest_rating
-    #returns the lowest value in the ratings c
-  end
 
-  def Show::least_popular_show
-    #returns an array of all of the shows that
-    # have a rating greater than 5. hint: use the where Active Record method.
 
 
   end
